@@ -1,0 +1,52 @@
+/* !
+ * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 Les auteurs Bootstrap
+ * Copyright 2011-2021 Twitter, Inc.
+ * Sous licence MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "fonctions" ;
+@import "variables" ;
+@import "mixins" ;
+@import "utilitaires" ;
+
+// Mise en page et composants
+@import "racine" ;
+@import "redémarrer" ;
+@import "type" ;
+@import "images" ;
+@import "conteneurs" ;
+@import "grille" ;
+@import "tableaux" ;
+@import "formulaires" ;
+@import "boutons" ;
+@import "transitions" ;
+@import "liste déroulante" ;
+@import "groupe de boutons" ;
+@import "nav" ;
+@import "barre de navigation" ;
+@import "carte" ;
+@import "accordéon" ;
+@import "fil d'Ariane" ;
+@import "pagination" ;
+@import "insigne" ;
+@import "alerte" ;
+@import "progrès" ;
+@import "groupe-liste" ;
+@import "fermer" ;
+@import "toasts" ;
+@import "modal" ;
+@import "info-bulle" ;
+@import "popover" ;
+@import "carrousel" ;
+@import "spinners" ;
+@import "offcanvas" ;
+
+// Aides
+@import "aides" ;
+
+// Utilitaires
+@import "utilitaires/api" ;
+// scss-docs-end import-stack

@@ -1,0 +1,104 @@
+//
+// Titres
+//
+.h1 {
+  @étendre h1 ;
+}
+
+.h2 {
+  @étendre h2 ;
+}
+
+.h3 {
+  @étendre h3 ;
+}
+
+.h4 {
+  @étendre h4 ;
+}
+
+.h5 {
+  @étendre h5 ;
+}
+
+.h6 {
+  @étendre h6 ;
+}
+
+
+.conduire {
+  @include font-size($lead-font-size);
+  font-weight : $lead-font-weight ;
+}
+
+// Type d'affichage des classes
+@each $display, $font-size in $display-font-sizes {
+  .display-#{$display} {
+    @include font-size($font-size);
+    font-weight : $display-font-weight ;
+    hauteur de ligne : $display-line-height ;
+  }
+}
+
+//
+// Accent
+//
+.petit {
+  @étendre petit ;
+}
+
+.marque {
+  marque @extend ;
+}
+
+//
+// Listes
+//
+
+.list-sans style {
+  @include list-unstyled();
+}
+
+// Inline transforme les éléments de la liste en bloc inline
+.list-inline {
+  @include list-unstyled();
+}
+.list-inline-item {
+  affichage : bloc en ligne ;
+
+  &:pas(:dernier-enfant) {
+    marge-droite : $list-inline-padding ;
+  }
+}
+
+
+//
+// Divers
+//
+
+// Construit sur `abbr`
+.initialisme {
+  @include font-size($initialism-font-size);
+  transformation de texte : majuscule ;
+}
+
+// Blocs de citations
+.blockquote {
+  margin-bottom : $blockquote-margin-y ;
+  @include font-size($blockquote-font-size);
+
+  > :dernier-enfant {
+    marge inférieure : 0 ;
+  }
+}
+
+.blockquote-pied de page {
+  margin-top : -$blockquote-margin-y ;
+  margin-bottom : $blockquote-margin-y ;
+  @include font-size($blockquote-footer-font-size);
+  couleur : $blockquote-footer-color ;
+
+  &::avant de {
+    contenu : "\2014\00A0" ; // em dash, nbsp
+  }
+}
